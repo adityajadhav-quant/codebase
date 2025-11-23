@@ -48,4 +48,12 @@ print(solution([2, 2, 2]))            # Expected output: 0
 print(solution([4, 4, 4, 4]))         # Expected output: 4
 print(solution([1, 2, 2, 3, 3, 3]))   # Expected output: 3
 
-  
+print(solution_opt([3, 8, 2, 3, 3, 2]))   # Expected output: 3
+print(solution_opt([7, 1, 2, 8, 2]))      # Expected output: 2
+print(solution_opt([3, 1, 4, 1, 5]))      # Expected output: 0
+print(solution_opt([5, 5, 5, 5, 5]))      # Expected output: 5
+print(solution_opt([]))                   # Expected output: 0
+print(solution_opt([1]))                  # Expected output: 1
+print(solution_opt([2, 2, 2]))            # Expected output: 0
+print(solution_opt([4, 4, 4, 4]))         # Expected output: 4
+print(solution_opt([1, 2, 2, 3, 3, 3]))   # Expected output: 3
