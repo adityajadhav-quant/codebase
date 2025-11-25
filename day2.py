@@ -1,10 +1,8 @@
 # ------------------------------------------------------------
-# Problem Explanation (Brief):
+# Problem Explanation:
 # You are given a sorted list of integers (A) and a target value (X).
 # Your task is to return ANY index where X occurs in A.
 # If X does not exist in A, return -1.
-# The original code used binary search but had boundary and update bugs.
-# Below is a correct and intuitive binary search implementation.
 # ------------------------------------------------------------
 
 def solution(numbers, target):
