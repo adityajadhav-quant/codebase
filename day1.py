@@ -1,11 +1,11 @@
-"""
-Find the largest integer X such that X appears exactly X times in the array.
+#
+# Find the largest integer X such that X appears exactly X times in the array.
+#
+# Examples:
+# A = [3, 8, 2, 3, 3, 2] → 3
+# A = [7, 1, 2, 8, 2] → 2
+# A = [3, 1, 4, 1, 5] → 0
 
-Examples: 
-A = [3, 8, 2, 3, 3, 2] → 3 
-A = [7, 1, 2, 8, 2] → 2
-A = [3, 1, 4, 1, 5] → 0
-"""
 
 A = [7, 1, 2, 8, 2]
 
