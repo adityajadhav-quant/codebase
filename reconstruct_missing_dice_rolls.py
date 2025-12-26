@@ -54,7 +54,7 @@ def reconstruct_missing_dice_rolls(A, F, M):
     min_possible = F * 1
     max_possible = F * 6
 
-    # If required sum is impossible → no solution
+    # If a required sum is impossible → no solution
     if not (min_possible <= required_missing_sum <= max_possible):
         return [0]
 
