@@ -33,7 +33,18 @@ Return:
 - [0] if no valid solution exists
 """
 
-def solution(A, F, M):
+def reconstruct_missing_dice_rolls(A, F, M):
+    """
+    Reconstructs missing dice rolls given known rolls, number of missing, and mean.
+
+    Args:
+        A (list of int): Known dice rolls (1-6).
+        F (int): Number of missing rolls.
+        M (float): The arithmetic mean of all rolls.
+
+    Returns:
+        list: List of F integers (1-6) for missing rolls, or [0] if impossible.
+    """
     known_sum = sum(A)
     total_rolls = len(A) + F
     target_total_sum = M * total_rolls
@@ -43,7 +54,7 @@ def solution(A, F, M):
     min_possible = F * 1
     max_possible = F * 6
 
-    # If a required sum is impossible → no solution
+    # If required sum is impossible → no solution
     if not (min_possible <= required_missing_sum <= max_possible):
         return [0]
 
@@ -60,9 +71,3 @@ def solution(A, F, M):
         idx += 1
 
     return missing_rolls
-
-
-print(solution([3, 2, 4, 3], 2, 4)) # [6, 6]
-print(solution([1, 2, 3, 4], 6, 6)) # [0]
-print(solution([6, 1], 1, 1)) # [0]
-
