@@ -1,4 +1,4 @@
-# Immutable objects (int, str, tuple)
+# Immutable objects
 num = 42
 text = "Hello, World!"
 my_tuple = (1, 2, 3)
