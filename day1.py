@@ -1,3 +1,4 @@
+# We will add lot of small models here like regime shifting, optimizer, trade generation, global macro, factor backtesting
 # Immutable objects
 num = 42
 text = "Hello, World!"
